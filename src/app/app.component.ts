@@ -13,4 +13,6 @@ export class AppComponent {
 // Nicht vergessen !
 // Abbhängigleiten nach laden (dependency injection) nicht bergessen:
 // 1. npm install;
-// 2. npm install bootstrap jquery popper  -> für Bootstrap 4
+
+// Ich denke Bootstrap4 muss gar nicht seperat installiert werden, aber falls doch:
+// 2. npm install bootstrap jquery popper  -> für Bootstrap 4 ()
