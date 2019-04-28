@@ -8,3 +8,9 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'Test01';
 }
+
+
+// Nicht vergessen !
+// Abbhängigleiten nach laden (dependency injection) nicht bergessen:
+// 1. npm install;
+// 2. npm install bootstrap jquery popper  -> für Bootstrap 4
