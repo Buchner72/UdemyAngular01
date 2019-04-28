@@ -14,10 +14,13 @@ export class MutterComponent {
 
   constructor() {
     this.title = 'Hallo Welt!';
-    setTimeout(() => {
-     this.title = '123!';
+    setTimeout(() => {          // Schreibweide: Innerhalb dieser Funktion soll das 'this' von aussen erhaten bleiben
+     this.title = '2,5 Sekunden sind vorbei';
     }, 2500);
-
   }
 }
+
+// So wurde diese Componet erstellt
+// ng g c mutter --flat -is -it --spec false
+
 
