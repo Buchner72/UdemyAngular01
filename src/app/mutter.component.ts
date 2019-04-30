@@ -14,7 +14,7 @@ export class MutterComponent {
 
   constructor() {
     this.title = 'Hallo Welt!';
-    setTimeout(() => {          // Schreibweide: Innerhalb dieser Funktion soll das 'this' von aussen erhaten bleiben
+    setTimeout(() => {          // Schreisweide: Innerhalb dieser Funktion soll das 'this' von aussen erhaten bleiben
      this.title = '2,5 Sekunden sind vorbei';
     }, 2500);
   }
