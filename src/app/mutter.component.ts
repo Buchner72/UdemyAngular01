@@ -12,9 +12,9 @@ import { Component } from "@angular/core";
         <h1>
           {{ title }}
         </h1>
-        <div>
-          <div></div>
-        </div>
+        <app-kind></app-kind>
+        <app-kind></app-kind>
+        <app-kind></app-kind>
       </div>
     </div>
   `,
