@@ -4,7 +4,11 @@ import { Component } from "@angular/core";
   selector: "app-mutter",
   template: `
     <div class="container">
-      <div class="bs-docs-example">  <!--styles.css-->
+      <div class="bs-docs-example">
+        <!--styles.css-->
+        <div class="alert alert-success" role="alert">
+          <strong>mutter.component!</strong>
+        </div>
         <h1>
           {{ title }}
         </h1>
