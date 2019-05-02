@@ -12,6 +12,47 @@ import { Component } from "@angular/core";
         <h1>
           {{ title }}
         </h1>
+        <div class="container">
+          <div class="row">
+          <div class="col-1">
+            <div class="dropdown">
+              <button
+                class="btn btn-secondary dropdown-toggle"
+                type="button"
+                id="dropdownMenuButton"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false"
+              >
+                Eltern
+              </button>
+              <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                <a class="dropdown-item" href="#">ledig</a>
+                <a class="dropdown-item" href="#">verheiratet</a>
+                <a class="dropdown-item" href="#">Lebensgemeinschaft</a>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+          <div class="dropdown">
+            <button
+              class="btn btn-secondary dropdown-toggle"
+              type="button"
+              id="dropdownMenuButton"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+            >
+              Anzahl der Kinder
+            </button>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+              <a class="dropdown-item" href="#">1</a>
+              <a class="dropdown-item" href="#">2</a>
+              <a class="dropdown-item" href="#">3</a>
+            </div>
+          </div>
+        </div>
+        </div>
         <app-kind></app-kind>
         <app-kind></app-kind>
         <app-kind></app-kind>
