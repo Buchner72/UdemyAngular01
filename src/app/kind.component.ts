@@ -8,6 +8,7 @@ import { Component, OnInit } from '@angular/core';
         <!--styles.css-->
         <div class="alert alert-success" role="alert">
           <strong>kind.component!</strong>
+          <h2>Ein Erwachsener mit:</h2>
           <div class="card" style="width: 18rem;">
             <img
               class="card-img-top"
@@ -15,7 +16,7 @@ import { Component, OnInit } from '@angular/core';
               alt="Card image cap"
             />
             <div class="card-body">
-              <h5 class="card-title">1 Erwachsener 1 Kind</h5>
+              <h5 class="card-title">1 Kind</h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
