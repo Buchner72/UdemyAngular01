@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'app-kind',
@@ -16,7 +16,7 @@ import { Component, OnInit } from '@angular/core';
               alt="Card image cap"
             />
             <div class="card-body">
-              <h5 class="card-title">1 Kind</h5>
+              <h5 class="card-title">{{aString}}</h5>
               <p class="card-text">
                 Some quick example text to build on the card title and make up
                 the bulk of the card's content.
@@ -31,7 +31,10 @@ import { Component, OnInit } from '@angular/core';
   styles: []
 })
 export class KindComponent implements OnInit {
-  constructor() {}
+  @Input()  aString: string;
+  kind = 'Kind 1';
+  constructor() {
+  }
 
   ngOnInit() {}
 }

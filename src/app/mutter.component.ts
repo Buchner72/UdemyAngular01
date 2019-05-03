@@ -1,4 +1,4 @@
-import { Component } from "@angular/core";
+import { Component, OnInit } from "@angular/core";
 
 @Component({
   selector: "app-mutter",
@@ -54,15 +54,29 @@ import { Component } from "@angular/core";
             </div>
           </div>
         </div>
-        <app-kind></app-kind>
-        <app-kind></app-kind>
-        <app-kind></app-kind>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm">
+              <app-kind [aString]="'Kind 1'"></app-kind>
+            </div>
+            <div class="col-sm">
+              <app-kind [aString]="'Kind 2'"></app-kind>
+            </div>
+            <div class="col-sm">
+              <app-kind [aString]="'Kind 3'"></app-kind>
+            </div>
+            <div class="col-sm">
+              <app-kind [aString]="'Kind 4'"></app-kind>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   `,
   styles: []
 })
-export class MutterComponent {
+export class MutterComponent implements OnInit {
+  aString = "Ich bin eine string [Property Binding]";
   title: string;
 
   constructor() {
@@ -72,6 +86,7 @@ export class MutterComponent {
       this.title = "2,5 Sekunden sind vorbei";
     }, 2500);
   }
+  ngOnInit() {}
 }
 
 // So wurde diese Componet erstellt
